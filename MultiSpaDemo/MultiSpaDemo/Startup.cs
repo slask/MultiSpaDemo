@@ -48,8 +48,11 @@ namespace MultiSpaDemo
 
                 routes.MapSpaFallbackRoute(
                     name: "spa-fallback",
+                    templatePrefix: "admin",
                     defaults: new { controller = "Admin", action = "Index" }
                 );
+
+
 
             });
         }
