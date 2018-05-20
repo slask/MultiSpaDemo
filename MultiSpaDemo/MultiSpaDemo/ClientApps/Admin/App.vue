@@ -1,24 +1,21 @@
 ﻿<template>
     <div class="app-root-comp">
         {{msg}}
-        <my-orders></my-orders>
-        <my-users></my-users>
+        <p>
+            <router-link to="/admin/orders">Go to orders</router-link>&nbsp&nbsp&nbsp
+            <router-link to="/admin/users">Go to users</router-link>
+        </p>
+        <router-view></router-view>
     </div>
 </template>
 <script>
     import Vue from 'vue'
-    import Orders from './Orders'
-    import Users from './Users'
 
     export default {
         data() {
             return {
                 msg: "This message is part of Admin root component!"
             }
-        },
-        components: {
-            "my-orders": Orders,
-            'MyUsers': Users
         }
     }
 </script>

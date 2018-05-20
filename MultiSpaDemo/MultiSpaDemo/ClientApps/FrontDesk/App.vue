@@ -1,24 +1,21 @@
 ﻿<template>
     <div class="app-root-comp">
         {{msg}}
-        <my-payment></my-payment>
-        <my-products></my-products>
+        <p>
+            <router-link to="/frontdesk/products">Go to products</router-link>&nbsp&nbsp&nbsp
+            <router-link to="/frontdesk/payment">Go to payment</router-link>
+        </p>
+        <router-view></router-view>
     </div>
 </template>
 <script>
     import Vue from 'vue'
-    import Payment from './Payment'
-    import Products from './Products'
 
     export default {
         data() {
             return {
                 msg: "This message is part of Front Desk root component!"
             }
-        },
-        components: {
-            "my-payment": Payment,
-            'my-products': Products
         }
     }
 </script>
