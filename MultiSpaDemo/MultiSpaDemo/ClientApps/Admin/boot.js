@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 
 import Orders from './Orders'
 import Users from './Users'
+import NotFound from '../common/NotFound'
 
 Vue.use(VueRouter)
 
@@ -17,7 +18,8 @@ const routes = [
         redirect: '/admin/orders'
     },
     { path: '/admin/orders', component: Orders },
-    { path: '/admin/users', component: Users }
+    { path: '/admin/users', component: Users },
+    { path: '*', component: NotFound }
 ]
 
 const router = new VueRouter({

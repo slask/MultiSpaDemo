@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 
 import Payment from './Payment'
 import Checkout from './Checkout'
+import NotFound from '../common/NotFound'
 
 Vue.use(VueRouter)
 
@@ -17,7 +18,8 @@ const routes = [
         redirect: '/frontdesk/checkout'
     },
     { path: '/frontdesk/checkout', component: Checkout },
-    { path: '/frontdesk/payment', component: Payment }
+    { path: '/frontdesk/payment', component: Payment },
+    { path: '*', component: NotFound }
 ]
 
 const router = new VueRouter({
