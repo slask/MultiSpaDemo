@@ -31,6 +31,7 @@ namespace MultiSpaDemo
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                app.UseWebpackDevMiddleware();
             }
             else
             {

@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace MultiSpaDemo.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         public IActionResult Index()
         {
