@@ -51,12 +51,16 @@ namespace MultiSpaDemo
                     template: "{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapSpaFallbackRoute(
-                    name: "spa-fallback",
+                    name: "spa-fallback-admin",
                     templatePrefix: "admin",
                     defaults: new { controller = "Admin", action = "Index" }
                 );
 
-
+                routes.MapSpaFallbackRoute(
+                    name: "spa-fallback-frontdesk",
+                    templatePrefix: "frontdesk",
+                    defaults: new { controller = "FrontDesk", action = "Index" }
+                );
 
             });
         }
