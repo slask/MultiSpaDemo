@@ -9,7 +9,9 @@ module.exports = (env) => {
     return {
         mode: isDevBuild ? 'development' : "production",
         context: __dirname,
-        entry: './ClientApps/Admin/boot.js',
+        entry: {
+            admin: './ClientApps/Admin/boot.js'
+        },
         output: {
             path: path.join(__dirname, bundleOutputDir),
             filename: 'admin.js',
