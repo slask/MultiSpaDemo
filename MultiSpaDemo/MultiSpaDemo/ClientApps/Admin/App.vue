@@ -3,25 +3,22 @@
         <div class="card-header"><h4>{{msg}} App Component</h4></div>
         <h5 class="p-3">This message is part of <mark>{{msg}}</mark> root component!</h5>
 
-        <my-orders></my-orders>
-        <my-users></my-users>
+        <p>
+            <router-link to="/admin/orders">Go to orders</router-link>&nbsp&nbsp&nbsp
+            <router-link to="/admin/users">Go to users</router-link>
+        </p>
+        <router-view></router-view>
 
     </div>
 </template>
 <script>
     import Vue from 'vue'
-    import Orders from './Orders'
-    import Users from './Users'
 
     export default {
         data() {
             return {
                 msg: "Admin"
             }
-        },
-        components: {
-            "my-orders": Orders,
-            'MyUsers': Users
         }
     }
 </script>
