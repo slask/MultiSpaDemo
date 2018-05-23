@@ -1,8 +1,11 @@
 ﻿<template>
-    <div class="app-root-comp">
-        {{msg}}
+    <div class="card  app-root-comp">
+        <div class="card-header"><h2>App Component</h2></div>
+        <h3 class="p-3">This message is part of <mark>{{msg}}</mark> root component!</h3>
+
         <my-orders></my-orders>
         <my-users></my-users>
+
     </div>
 </template>
 <script>
@@ -13,7 +16,7 @@
     export default {
         data() {
             return {
-                msg: "This message is part of Admin root component!"
+                msg: "Admin"
             }
         },
         components: {
@@ -24,7 +27,6 @@
 </script>
 <style scoped>
     .app-root-comp {
-        padding-top: 70px;
-        background: #ffd800;
+        margin: 30px;
     }
 </style>

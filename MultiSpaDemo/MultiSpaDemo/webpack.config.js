@@ -20,6 +20,12 @@ module.exports = (env) => {
         module: {
             rules: [
                 {
+                    test: /\.css$/,
+                  //  exclude: /node_modules/,
+                  //  include: [path.resolve(__dirname, "/node_modules/bootstrap/dist/css/")],
+                    use: ['style-loader', 'css-loader']
+                },
+                {
                     test: /\.js$/,
                     exclude: /node_modules/,
                     use: {

@@ -4,20 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MultiSpaDemo</title>
+    <link rel="stylesheet" href="~/bootstrap.min.css" />
 </head>
-<body>
-    <div>This is a div from main layout</div>
-    <nav>
-        <ul class="nav navbar-nav">
-            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a></li>
-            <li><a asp-area="" asp-controller="FrontDesk" asp-action="Index">Front Desk</a></li>
-        </ul>
-    </nav>
+<body class="p-3">
+    <h1>Multi Spa Demo Title - in main layout</h1>
+<nav>
+    <ul class="nav navbar-nav">
+        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+        <li><a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a></li>
+        <li><a asp-area="" asp-controller="FrontDesk" asp-action="Index">Front Desk</a></li>
+    </ul>
+</nav>
+<hr/>
     <div>
         @RenderBody()
         <hr />
         <footer>
+            <h4>This is a footer from main layout</h4>
             <p>&copy; 2018 - MultiSpaDemo</p>
         </footer>
     </div>

@@ -1,6 +1,7 @@
 ﻿<template>
-    <div class="orders-comp">
-        {{msg}}
+    <div class="card text-white bg-success users-comp">
+        <div class="card-header"><h2>{{msg}} Component</h2></div>
+        <h3 class="p-3">This message is part of <mark>{{msg}}</mark> component!</h3>
     </div>
 </template>
 <script>
@@ -9,16 +10,14 @@
     export default {
         data() {
             return {
-                msg: "This messeage is part of Users component"
+                msg: "Users"
             }
         }
     }
 </script>
 <style scoped>
 
-    .orders-comp {
-        padding-top: 90px;
-        background: #b200ff;
+    .users-comp {
         margin: 30px;
     }
 </style>
