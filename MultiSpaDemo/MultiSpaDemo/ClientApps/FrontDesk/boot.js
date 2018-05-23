@@ -7,16 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import VueRouter from 'vue-router'
 
 import Payment from './Payment'
-import Products from './Products'
+import Checkout from './Checkout'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/frontdesk',
-        redirect: '/frontdesk/products'
+        redirect: '/frontdesk/checkout'
     },
-    { path: '/frontdesk/products', component: Products },
+    { path: '/frontdesk/checkout', component: Checkout },
     { path: '/frontdesk/payment', component: Payment }
 ]
 

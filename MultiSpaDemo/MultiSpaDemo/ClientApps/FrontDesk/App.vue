@@ -3,8 +3,8 @@
         <div class="card-header"><h4>{{msg}} App Component</h4></div>
         <h5 class="p-3">This message is part of <mark>{{msg}}</mark> root component!</h5>
 
-        <p>
-            <router-link to="/frontdesk/products">Go to products</router-link>&nbsp&nbsp&nbsp
+        <p class="m-3">
+            <router-link to="/frontdesk/checkout">Go to checkout</router-link>&nbsp&nbsp&nbsp
             <router-link to="/frontdesk/payment">Go to payment</router-link>
         </p>
         <router-view></router-view>
