@@ -22,8 +22,6 @@ module.exports = (env) => {
             rules: [
                 {
                     test: /\.css$/,
-                  //  exclude: /node_modules/,
-                  //  include: [path.resolve(__dirname, "/node_modules/bootstrap/dist/css/")],
                     use: ['style-loader', 'css-loader']
                 },
                 {

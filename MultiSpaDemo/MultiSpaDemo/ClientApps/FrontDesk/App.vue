@@ -1,30 +1,31 @@
 ﻿<template>
-    <div class="app-root-comp">
-        {{msg}}
+    <div class="card app-root-comp">
+        <div class="card-header"><h4>{{msg}} App Component</h4></div>
+        <h5 class="p-3">This message is part of <mark>{{msg}}</mark> root component!</h5>
+
+        <my-checkout></my-checkout>
         <my-payment></my-payment>
-        <my-products></my-products>
     </div>
 </template>
 <script>
     import Vue from 'vue'
     import Payment from './Payment'
-    import Products from './Products'
+    import Checkout from './Checkout'
 
     export default {
         data() {
             return {
-                msg: "This message is part of Front Desk root component!"
+                msg: "Front Desk"
             }
         },
         components: {
             "my-payment": Payment,
-            'my-products': Products
+            'my-checkout': Checkout
         }
     }
 </script>
 <style scoped>
     .app-root-comp {
-        padding-top: 70px;
-        background: #6ba453;
+        margin: 30px;
     }
 </style>

@@ -1,7 +1,7 @@
 ﻿<template>
     <div class="card text-white bg-success users-comp">
-        <div class="card-header"><h2>{{msg}} Component</h2></div>
-        <h3 class="p-3">This message is part of <mark>{{msg}}</mark> component!</h3>
+        <div class="card-header"><h4>{{msg}} Component</h4></div>
+        <h5 class="p-3">This message is part of <mark>{{msg}}</mark> component!</h5>
     </div>
 </template>
 <script>

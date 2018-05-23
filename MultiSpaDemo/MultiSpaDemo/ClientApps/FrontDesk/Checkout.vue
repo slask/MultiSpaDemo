@@ -1,5 +1,5 @@
 ﻿<template>
-    <div class="card text-white bg-info payment-comp">
+    <div class="card text-white bg-warning checkout-comp">
         <div class="card-header"><h4>{{msg}} Component</h4></div>
         <h5 class="p-3">This message is part of <mark>{{msg}}</mark> component!</h5>
     </div>
@@ -10,14 +10,14 @@
     export default {
         data() {
             return {
-                msg: "Payment"
+                msg: "Checkout"
             }
         }
     }
 </script>
 <style scoped>
 
-    .payment-comp {
+    .checkout-comp {
         margin: 30px;
     }
 </style>
