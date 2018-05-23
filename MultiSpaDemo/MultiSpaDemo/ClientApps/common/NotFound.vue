@@ -1,18 +1,14 @@
 ﻿<template>
-    <div class="notfound-comp">
-        <p class="white">Oops not found</p> 
+    <div class="card text-white bg-danger comp">
+        <div class="card-header"><h4>404 Not Found</h4></div>
+        <h5 class="p-3">Ooops! Something went wrong!</h5>
     </div>
 </template>
 <script>
-  
 </script>
 <style scoped>
-    .white{
-        color: white;
-    }
-    .notfound-comp {
-        padding-top: 90px;
-        background: #000000;
+
+    .comp {
         margin: 30px;
     }
 </style>
